@@ -13,7 +13,7 @@ func CreatePayloadFromURLs(urls string) RequestBody {
 		trimmedAddress := strings.TrimSpace(address)
 		origins[i] = Origin{
 			Address: trimmedAddress,
-			Name:    fmt.Sprintf("origin-%d", i+1), // or use some part of the URL as name
+			Name:    fmt.Sprintf("origin-%d", i+1),
 		}
 	}
 
